@@ -4,6 +4,8 @@ $primary-color: rgba(114,78,239,1);
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "./side-bar";
+@import "./main";
+@import "./main-top";
 
 .my-container{
   height: 2322px;
@@ -15,3 +17,4 @@ $primary-color: rgba(114,78,239,1);
 .my-column{
   border: $column-clr solid 1px;
 }
+
