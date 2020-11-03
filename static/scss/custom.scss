@@ -1,2 +1,20 @@
+$container-clr: rgb(45, 58, 247);
+$column-clr: rgb(247, 59, 45);
+$primary-color: rgba(114,78,239,1);
+
+.my-container{
+  height: 2322px;
+  border: $container-clr solid 3px;
+}
+.my-row{
+  height: 1989px;
+}
+.my-column{
+  border: $column-clr solid 1px;
+}
+.side-bar{
+  background-color: $primary-color
+}
+
 
 @import "../../node_modules/bootstrap/scss/bootstrap";

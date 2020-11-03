@@ -1,3 +1,20 @@
+.my-container {
+  height: 2322px;
+  border: #2d3af7 solid 3px;
+}
+
+.my-row {
+  height: 1989px;
+}
+
+.my-column {
+  border: #f73b2d solid 1px;
+}
+
+.side-bar {
+  background-color: #724eef;
+}
+
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
