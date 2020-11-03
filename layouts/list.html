@@ -11,11 +11,9 @@
 <body>
   <div class="container-fluid my-container">
     <div class="row my-row">
-      <div class="col-md-1 col-sm-6 my-column side-bar">
-        col-4
-      </div>
-      <div class="col-md-11 col-sm-6 my-column">
-        col-8
+      {{partial "side_bar" .}}
+      <div class="col my-column">
+        col2
       </div>
     </div>
   </div>

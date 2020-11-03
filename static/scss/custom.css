@@ -1,20 +1,3 @@
-.my-container {
-  height: 2322px;
-  border: #2d3af7 solid 3px;
-}
-
-.my-row {
-  height: 1989px;
-}
-
-.my-column {
-  border: #f73b2d solid 1px;
-}
-
-.side-bar {
-  background-color: #724eef;
-}
-
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -4540,7 +4523,7 @@ input[type="button"].btn-block {
   border-bottom: 1px solid #dee2e6;
 }
 
-.nav-tabs .nav-item {
+.nav-tabs .nav-item, .nav-tabs .login-item {
   margin-bottom: -1px;
 }
 
@@ -4561,7 +4544,8 @@ input[type="button"].btn-block {
 }
 
 .nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .show.login-item .nav-link {
   color: #495057;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
@@ -4584,7 +4568,8 @@ input[type="button"].btn-block {
 }
 
 .nav-fill > .nav-link,
-.nav-fill .nav-item {
+.nav-fill .nav-item,
+.nav-fill .login-item {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -4592,7 +4577,8 @@ input[type="button"].btn-block {
 }
 
 .nav-justified > .nav-link,
-.nav-justified .nav-item {
+.nav-justified .nav-item,
+.nav-justified .login-item {
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
   -webkit-box-flex: 1;
@@ -10817,5 +10803,38 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+
+.side-bar {
+  background-color: #724eef;
+  padding: 38px 46px 38px 24px;
+}
+
+.nav {
+  margin: 56px 0 59px 0;
+}
+
+.nav-item, .login-item {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 0 27px 0;
+}
+
+.login-item {
+  font-weight: normal;
+}
+
+.my-container {
+  height: 2322px;
+  border: #2d3af7 solid 1px;
+}
+
+.my-row {
+  height: 1989px;
+}
+
+.my-column {
+  border: #f73b2d solid 1px;
 }
 /*# sourceMappingURL=custom.css.map */

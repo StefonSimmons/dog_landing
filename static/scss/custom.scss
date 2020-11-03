@@ -1,10 +1,13 @@
-$container-clr: rgb(45, 58, 247);
+$container-clr: rgb(45, 58, 247) solid 1px;
 $column-clr: rgb(247, 59, 45);
 $primary-color: rgba(114,78,239,1);
 
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./side-bar";
+
 .my-container{
   height: 2322px;
-  border: $container-clr solid 3px;
+  border: $container-clr;
 }
 .my-row{
   height: 1989px;
@@ -12,9 +15,3 @@ $primary-color: rgba(114,78,239,1);
 .my-column{
   border: $column-clr solid 1px;
 }
-.side-bar{
-  background-color: $primary-color
-}
-
-
-@import "../../node_modules/bootstrap/scss/bootstrap";

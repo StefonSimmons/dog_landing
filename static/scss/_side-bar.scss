@@ -1,0 +1,18 @@
+.side-bar{
+  background-color: $primary-color;
+  padding: 38px 46px 38px 24px;
+}
+.nav{
+  margin: 56px 0 59px 0;
+}
+.nav-item{
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 0 27px 0;
+}
+
+.login-item{
+  @extend .nav-item;
+  font-weight: normal;
+}
