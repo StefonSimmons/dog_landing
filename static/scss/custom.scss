@@ -6,7 +6,10 @@ $secondary-color: rgba(20,208,113,1);
 $teritary-color:rgba(255,99,90,1);
 
 $pricing-bg-color: rgb(245,245,245);
+$landing-page-height: 2322px;
+$landing-main-height: 1989px;
 $main-top-height: 500px;
+$main-middle-height: 1989px - 500px;
 
 // added color themes to the Sass theme-color map
 $theme-colors: (
@@ -21,13 +24,16 @@ $theme-colors: (
 @import "./main-top";
 @import "./main-top-pricing";
 @import "./main-middle";
+@import "./main-middle-feature";
+@import "./main-middle-carousel";
+@import "./main-middle-customer";
 
 .landing-container{
-  height: 2322px;
+  height: $landing-page-height;
   border: $container-clr;
 }
 .landing-row{
-  height: 1989px;
+  height: $landing-main-height;
 }
 .my-column{
   border: $column-clr solid 1px;
