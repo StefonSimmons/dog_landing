@@ -1,5 +1,6 @@
 $container-clr: rgb(45, 58, 247) solid 1px;
 $column-clr: rgb(247, 59, 45);
+
 $primary-color: rgba(114,78,239,1);
 $secondary-color: rgba(20,208,113,1);
 $teritary-color:rgba(255,99,90,1);
@@ -7,17 +8,25 @@ $teritary-color:rgba(255,99,90,1);
 $pricing-bg-color: rgb(245,245,245);
 $main-top-height: 500px;
 
+// added color themes to the Sass theme-color map
+$theme-colors: (
+  "infrastructure": $primary-color,
+  "apm":$secondary-color,
+  "management": $teritary-color
+);
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "./side-bar";
 @import "./main";
 @import "./main-top";
 @import "./main-top-pricing";
+@import "./main-middle";
 
-.my-container{
+.landing-container{
   height: 2322px;
   border: $container-clr;
 }
-.my-row{
+.landing-row{
   height: 1989px;
 }
 .my-column{
