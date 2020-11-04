@@ -12,7 +12,7 @@ $main-top-height: 500px;
 $theme-colors: (
   "infrastructure": $primary-color,
   "apm":$secondary-color,
-  "management": $teritary-color
+  "logs": $teritary-color
 );
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
