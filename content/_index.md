@@ -4,11 +4,12 @@ date: 2020-11-03T15:34:44-05:00
 draft: true
 header: 'Modern monitoring & analytics'
 subheader: 'See inside any stack, any app, at any scale, anywhere.' 
-pricing:
+products:
   - infrastructure: 
       title: infrastructure 
       price: $15 
-      description: Centralize your monitoring of systems and services 
+      description: Centralize your monitoring of systems and services
+      description_two: See across systems, apps, and services
       bullets:
         bullet_one: 250+ integrations 
         bullet_two: Out-of-the-box dashboards 
@@ -17,6 +18,7 @@ pricing:
       title: apm
       price: $31 
       description: Centralize your monitoring of systems and services 
+      description_two: Get full visibility into modern applications 
       bullets:
         bullet_one: Java, Ruby, Python, Go, Node, and more
         bullet_two: Out-of-the-box application health dashboards 
@@ -25,6 +27,7 @@ pricing:
       title: logs management
       price: $1.27 
       description: Analyze and explore log data in context 
+      description_two: Analyze and explore log data in context
       bullets:
         bullet_one: Collect from any source
         bullet_two: Automated & custom processing

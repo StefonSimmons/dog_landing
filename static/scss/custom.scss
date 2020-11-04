@@ -13,12 +13,9 @@ $main-top-height: 500px;
 @import "./main-top";
 @import "./main-top-pricing";
 
-body{
-  // font-family: National
-}
 .my-container{
   height: 2322px;
-  // border: $container-clr;
+  border: $container-clr;
 }
 .my-row{
   height: 1989px;
