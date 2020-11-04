@@ -1,0 +1,13 @@
+<div class="col my-column pricing">
+  <section>
+    <h6>{{.component.title}}</h6>
+    <p>Starting At</p>
+    <h1 class="price">{{.component.price}}</h1>
+    <p class="small">Per host, per month*</p>
+    <p>{{.component.description}}</p>
+    {{range .component.bullets}}
+    <li>- {{.}}</li>
+    {{end}}
+  </section>
+  <span class="details">See Details</span>
+</div>

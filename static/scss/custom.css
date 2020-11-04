@@ -10830,11 +10830,21 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .main-top {
-  height: 461px;
+  height: 500px;
 }
 
 .main-top-left {
   padding: 0 30px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 h1 {
@@ -10846,7 +10856,6 @@ h1 {
 
 h3 {
   font-size: 28px;
-  margin-bottom: 139px;
 }
 
 .btn {
@@ -10856,13 +10865,45 @@ h3 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 24px;
-  width: 362px;
   height: 80px;
+}
+
+.pricing {
+  height: 500px;
+  padding: 24px 25px;
+  background-color: whitesmoke;
+  border-right: #C7C7C7 solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price {
+  font-size: 48px;
+}
+
+li {
+  list-style: none;
+  font-size: 16px;
+}
+
+.details {
+  line-height: 19px;
+  border-bottom: solid 1px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .my-container {
   height: 2322px;
-  border: #2d3af7 solid 1px;
 }
 
 .my-row {

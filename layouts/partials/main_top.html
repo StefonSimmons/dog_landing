@@ -1,10 +1,18 @@
 <div class="row main-top">
   <div class="col-4 my-column main-top-left">
-    <h1>{{.Params.header}}</h1>
-    <h3>{{.Params.subheader}}</h3>
+    <section>
+      <h1>{{.Params.header}}</h1>
+      <h3>{{.Params.subheader}}</h3>
+    </section>
     <button type="button" class="btn btn-outline-primary">Try Free</button>
   </div>
   <div class="col-8 my-column">
-    2
+    <div class="row">
+      {{range .Params.Pricing}} <!--mapping the pricing_component array of arrays-->
+        {{range $component, $value:=.}} <!--mapping the objects of the pricing_component -->
+          {{partial "main_top_pricing" (dict "component" $value)}}
+        {{end}}
+      {{end}}
+    </div>
   </div>
 </div>
