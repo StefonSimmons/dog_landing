@@ -6,7 +6,7 @@ header: 'Modern monitoring & analytics'
 subheader: 'See inside any stack, any app, at any scale, anywhere.' 
 pricing:
   - infrastructure: 
-      title: Infrastucture 
+      title: infrastructure 
       price: $15 
       description: Centralize your monitoring of systems and services 
       bullets:
@@ -14,7 +14,7 @@ pricing:
         bullet_two: Out-of-the-box dashboards 
         bullet_three: 15-month metric retention
   - apm:
-      title: APM
+      title: apm
       price: $31 
       description: Centralize your monitoring of systems and services 
       bullets:
@@ -22,7 +22,7 @@ pricing:
         bullet_two: Out-of-the-box application health dashboards 
         bullet_three: 1 million trace events per host included
   - logs_management:
-      title: Logs Management
+      title: logs management
       price: $1.27 
       description: Analyze and explore log data in context 
       bullets:

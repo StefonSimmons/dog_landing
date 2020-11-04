@@ -1,0 +1,49 @@
+.pricing-container{
+  height: $main-top-height;
+  padding: 24px 25px;
+  background-color: $pricing-bg-color;
+  border-right: #C7C7C7 solid 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.price-title{
+  font-size: 12px;
+  letter-spacing: 0.342857px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.infrastructure-component{
+  color: $primary-color;
+}
+.apm-component{
+  color: $secondary-color;
+}
+.management-component{
+  color: $teritary-color;
+}
+.text{
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+.price{
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+.small{
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+.description{
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+li{
+  list-style: none;
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+.see-details{
+  border-bottom: solid 1px;
+  width: max-content
+}

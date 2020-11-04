@@ -9,7 +9,7 @@
   <div class="col-8 my-column">
     <div class="row">
       {{range .Params.Pricing}} <!--mapping the pricing_component array of arrays-->
-        {{range $component, $value:=.}} <!--mapping the objects of the pricing_component -->
+        {{range $value:=.}} <!--mapping the objects of the pricing_component -->
           {{partial "main_top_pricing" (dict "component" $value)}}
         {{end}}
       {{end}}

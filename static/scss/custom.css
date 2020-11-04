@@ -10868,7 +10868,7 @@ h3 {
   height: 80px;
 }
 
-.pricing {
+.pricing-container {
   height: 500px;
   padding: 24px 25px;
   background-color: whitesmoke;
@@ -10885,17 +10885,52 @@ h3 {
           justify-content: space-between;
 }
 
+.price-title {
+  font-size: 12px;
+  letter-spacing: 0.342857px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.infrastructure-component {
+  color: #724eef;
+}
+
+.apm-component {
+  color: #14d071;
+}
+
+.management-component {
+  color: #ff635a;
+}
+
+.text {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
 .price {
   font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.small {
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 18px;
 }
 
 li {
   list-style: none;
   font-size: 16px;
+  padding-bottom: 8px;
 }
 
-.details {
-  line-height: 19px;
+.see-details {
   border-bottom: solid 1px;
   width: -webkit-max-content;
   width: -moz-max-content;

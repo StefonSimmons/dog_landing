@@ -1,13 +1,13 @@
-<div class="col my-column pricing">
+<div class="col my-column pricing-container">
   <section>
-    <h6>{{.component.title}}</h6>
-    <p>Starting At</p>
+    <h6 class="{{.component.title}}-component price-title">{{.component.title}}</h6>
+    <p class="text">Starting at</p>
     <h1 class="price">{{.component.price}}</h1>
     <p class="small">Per host, per month*</p>
-    <p>{{.component.description}}</p>
+    <p class="description">{{.component.description}}</p>
     {{range .component.bullets}}
     <li>- {{.}}</li>
     {{end}}
   </section>
-  <span class="details">See Details</span>
+  <span class="{{.component.title}}-component see-details">See Details</span>
 </div>

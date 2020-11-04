@@ -1,15 +1,21 @@
 $container-clr: rgb(45, 58, 247) solid 1px;
 $column-clr: rgb(247, 59, 45);
 $primary-color: rgba(114,78,239,1);
+$secondary-color: rgba(20,208,113,1);
+$teritary-color:rgba(255,99,90,1);
+
 $pricing-bg-color: rgb(245,245,245);
-$height: 500px;
+$main-top-height: 500px;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "./side-bar";
 @import "./main";
 @import "./main-top";
-@import "./pricing";
+@import "./main-top-pricing";
 
+body{
+  // font-family: National
+}
 .my-container{
   height: 2322px;
   // border: $container-clr;
