@@ -1,3 +1,11 @@
-<div class="customer-card">
-  
+<div class="col customer-card">
+  <div class="row">
+    {{range .Params.customers}}
+    {{range $customer, $value:=.}}
+    <div class="col-4 {{$customer}}-block customer-block">
+      <img src={{$value.logo}} alt={{$customer}}-logo/>
+    </div>
+    {{end}}
+    {{end}}
+  </div>
 </div>

@@ -35,38 +35,29 @@ products:
 customers:
   - airbnb: 
       review: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      image: "../images/airbnb-logo.svg"
-      bg-color: '#FF5A5F'
+      logo: "../images/airbnb-logo.svg"
   - peloton: 
       review: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      image: ../images/peloton-logo.svg
-      bg-color: '#000'
+      logo: ../images/peloton-logo.svg
   - adroll: 
       review: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      image: ../images/addroll-logo.svg
-      bg-color: '#4DBCFB'
+      logo: ../images/adroll-logo.svg
   - evernote: 
       review: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      image: ../images/evernote-logo.svg
-      bg-color: '#292929'
+      logo: ../images/evernote-logo.svg
   - samsung: 
       review: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      image: ../images/samsung-logo.svg
-      bg-color: '#1428A0'
+      logo: ../images/samsung-logo.svg
   - nginx: 
       review: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      image: ../images/nginx-logo.svg
-      bg-color: '#00AA4E'
+      logo: ../images/nginx-logo.svg
   - pagerduty: 
       review: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      image: ../images/pagerduty-logo.svg
-      bg-color: '#5DBD5F'
+      logo: ../images/pagerduty-logo.svg
   - wholefoods: 
       review: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      image: ../images/wholefoods-logo.svg
-      bg-color: '#000'
+      logo: ../images/wholefoods-logo.svg
   - att: 
       review: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      image: ../images/att-logo.svg
-      bg-color: '#00A8E0'
+      logo: ../images/att-logo.svg
 ---
