@@ -2,6 +2,7 @@ $container-clr: rgb(45, 58, 247) solid 1px;
 $column-clr: rgb(247, 59, 45);
 
 $primary-color: rgba(114,78,239,1);
+$primary-color-dk: rgba(43,42,167,1);
 $secondary-color: rgba(20,208,113,1);
 $teritary-color:rgba(255,99,90,1);
 
@@ -17,7 +18,7 @@ $main-width: (557 * 2) + 30;
 
 // added color themes to the Sass theme-color map
 $theme-colors: (
-  "infrastructure": $primary-color,
+  "infrastructure": $primary-color-dk,
   "apm":$secondary-color,
   "logs": $teritary-color
 );

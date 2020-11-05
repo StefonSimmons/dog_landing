@@ -1,5 +1,24 @@
 .carousel-card{
   height: 585px;
-  width: 557px;
   padding: 0;
+}
+.carousel-title{
+  color: $primary-color;
+}
+.nav-row{
+  display: flex;
+  justify-content: space-between;
+}
+.carousel-text{
+  width: 433px;
+}
+.read-more{
+  font-size: 18px;
+  border-bottom: solid 1px;
+  width: max-content;
+  color: $primary-color;
+}
+.carousel-image{
+  padding: 30px;
+  width: 492px;
 }
