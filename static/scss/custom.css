@@ -11300,6 +11300,7 @@ a.text-logs:hover, a.text-logs:focus {
 .side-bar {
   background-color: #724eef;
   padding: 38px 46px 38px 24px;
+  margin-right: 15px;
 }
 
 .nav {
@@ -11366,7 +11367,7 @@ h3 {
 
 .pricing-container {
   height: 500px;
-  padding-top: 24px;
+  padding: 24px 15px;
   background-color: whitesmoke;
   border-right: #C7C7C7 solid 1px;
   display: -webkit-box;

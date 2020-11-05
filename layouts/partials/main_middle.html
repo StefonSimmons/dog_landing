@@ -22,22 +22,28 @@
   <div class="col my-column">
     <div class="row small-row-middle">
       <div class="col my-column">
-        logs
+        {{range .Params.products}}
+
+        {{if .logs_management }}
+        {{partial "logs_management_feature.html" (dict "logs_management" .logs_management )}}
+        {{end}}
+
+        {{end}}
       </div>
     </div>
     <div class="row large-row-middle">
       <div class="col my-column">
-        customers
+        {{partial "main_middle_customer" .}}
       </div>
     </div>
   </div>
   <div class="col my-column">
     <div class="row medium-row-middle">
       <div class="col my-column">
-        carousel
+        {{partial "main_middle_carousel" .}}
       </div>
     </div>
-    
+
   </div>
 </div>
 
