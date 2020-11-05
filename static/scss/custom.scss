@@ -8,9 +8,10 @@ $teritary-color:rgba(255,99,90,1);
 $pricing-bg-color: rgb(245,245,245);
 $landing-page-height: 2322px;
 $landing-main-height: 1989px;
-$main-top-height: 500px;
+$main-top-height: 515px;
 $main-middle-height: 1989px - 500px;
-$small-row-middle: 279px;
+$small-column-middle: 279px;
+$small-row-middle: 309px;
 $main-middle-bottom-height: $main-middle-height - $small-row-middle;
 $main-width: (557 * 2) + 30;
 
@@ -26,14 +27,13 @@ $theme-colors: (
 @import "./main";
 @import "./main-top";
 @import "./main-top-pricing";
-@import "./main-middle";
-@import "./main-middle-feature";
-@import "./main-middle-carousel";
-@import "./main-middle-customer";
+@import "./product-features";
+@import "./carousel-feature";
+@import "./customer-feature";
 
 .landing-container{
   height: $landing-page-height;
-  // border: $container-clr;
+  border: $container-clr;
 }
 .landing-row{
   height: $landing-main-height;
@@ -45,11 +45,11 @@ $theme-colors: (
   height: $small-row-middle;
 }
 .medium-row-middle{
-  height: 585px
+  height: 585px + 30px
 }
 .large-row-middle{
-  height: 186px * 4
-}
-.my-row-bottom{
   height: $main-middle-bottom-height;
+}
+.large-row{
+  height: (186px * 4) + 30px
 }

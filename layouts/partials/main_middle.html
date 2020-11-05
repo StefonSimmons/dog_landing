@@ -1,4 +1,4 @@
-<div class="row small-row-middle ">
+<div class="row small-row-middle align-items-center">
   <div class="col my-column">
     {{range .Params.products}}
 
@@ -18,9 +18,9 @@
     {{end}}
   </div>
 </div>
-<div class="row my-row-bottom">
+<div class="row large-row-middle">
   <div class="col my-column">
-    <div class="row small-row-middle">
+    <div class="row small-row-middle align-items-center">
       <div class="col my-column">
         {{range .Params.products}}
 
@@ -31,53 +31,18 @@
         {{end}}
       </div>
     </div>
-    <div class="row large-row-middle">
+    <div class="row large-row align-items-center">
       <div class="col my-column">
-        {{partial "main_middle_customer" .}}
+        {{partial "customer_feature" .}}
       </div>
     </div>
   </div>
   <div class="col my-column">
-    <div class="row medium-row-middle">
+    <div class="row medium-row-middle align-items-center">
       <div class="col my-column">
-        {{partial "main_middle_carousel" .}}
+        {{partial "carousel_feature" .}}
       </div>
     </div>
 
   </div>
 </div>
-
-
-
-<!-- <div class="row main-middle">
-
-  <div class="col my-column feature-left">
-
-    {{range .Params.products}}
-
-    {{if .apm }}
-    {{partial "apm_feature.html" (dict "apm" .apm )}}
-    {{end}}
-
-    {{if .logs_management }}
-    {{partial "logs_management_feature.html" (dict "logs_management" .logs_management )}}
-    {{end}}
-
-    {{end}}
-
-    {{partial "main_middle_customer" .}}
-
-  </div>
-  <div class="col my-column feature-right">
-    {{range .Params.products}}
-
-    {{if .infrastructure }}
-    {{partial "infrastructure_feature.html" (dict "infrastructure" .infrastructure )}}
-    {{end}}
-
-    {{end}}
-
-    {{partial "main_middle_carousel" .}}
-  </div>
-
-</div> -->

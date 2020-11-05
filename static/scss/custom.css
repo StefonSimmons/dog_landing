@@ -11324,10 +11324,11 @@ a.text-logs:hover, a.text-logs:focus {
 }
 
 .main-top {
-  height: 500px;
+  height: 515px;
 }
 
 .main-top-left {
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11342,6 +11343,7 @@ a.text-logs:hover, a.text-logs:focus {
 
 .main-top-right {
   padding: 0 30px;
+  height: 500px;
 }
 
 h1 {
@@ -11434,44 +11436,40 @@ li {
   width: max-content;
 }
 
-.feature-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0;
-}
-
-.feature-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding: 0;
-}
-
-.feature-card {
+.product-feature-card {
   height: 279px;
-  padding: 0px;
+  padding: 0;
 }
 
 .custom-overlay {
   mix-blend-mode: multiply;
+}
+
+.card-content-centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-title {
+  font-size: 12px;
+  letter-spacing: 0.342857px;
+  text-transform: uppercase;
+}
+
+.card-text {
+  font-size: 28px;
+  line-height: 34px;
 }
 
 .carousel-card {
@@ -11488,6 +11486,7 @@ li {
 
 .landing-container {
   height: 2322px;
+  border: #2d3af7 solid 1px;
 }
 
 .landing-row {
@@ -11499,18 +11498,18 @@ li {
 }
 
 .small-row-middle {
-  height: 279px;
+  height: 309px;
 }
 
 .medium-row-middle {
-  height: 585px;
+  height: 615px;
 }
 
 .large-row-middle {
-  height: 744px;
+  height: 1180px;
 }
 
-.my-row-bottom {
-  height: 1210px;
+.large-row {
+  height: 774px;
 }
 /*# sourceMappingURL=custom.css.map */
