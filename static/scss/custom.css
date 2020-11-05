@@ -11318,7 +11318,8 @@ a.text-logs:hover, a.text-logs:focus {
 }
 
 .main {
-  padding: 38px 60px 38px 30px;
+  margin-top: 38px;
+  margin-right: 15px;
 }
 
 .main-top {
@@ -11326,7 +11327,6 @@ a.text-logs:hover, a.text-logs:focus {
 }
 
 .main-top-left {
-  padding: 0 30px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11337,6 +11337,10 @@ a.text-logs:hover, a.text-logs:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.main-top-right {
+  padding: 0 30px;
 }
 
 h1 {
@@ -11362,7 +11366,7 @@ h3 {
 
 .pricing-container {
   height: 500px;
-  padding: 24px 25px;
+  padding-top: 24px;
   background-color: whitesmoke;
   border-right: #C7C7C7 solid 1px;
   display: -webkit-box;
@@ -11429,26 +11433,39 @@ li {
   width: max-content;
 }
 
-.main-middle {
-  height: 1489px;
-  padding: 30px 0;
-}
-
-.features {
+.feature-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0;
 }
 
+.feature-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0;
+}
+
 .feature-card {
   height: 279px;
-  width: 557px;
   padding: 0px;
 }
 
@@ -11459,7 +11476,7 @@ li {
 .carousel-card {
   height: 585px;
   width: 557px;
-  padding: 0px;
+  padding: 0;
 }
 
 .customer-card {
@@ -11470,7 +11487,6 @@ li {
 
 .landing-container {
   height: 2322px;
-  border: #2d3af7 solid 1px;
 }
 
 .landing-row {
@@ -11479,5 +11495,21 @@ li {
 
 .my-column {
   border: #f73b2d solid 1px;
+}
+
+.small-row-middle {
+  height: 279px;
+}
+
+.medium-row-middle {
+  height: 585px;
+}
+
+.large-row-middle {
+  height: 744px;
+}
+
+.my-row-bottom {
+  height: 1210px;
 }
 /*# sourceMappingURL=custom.css.map */

@@ -1,11 +1,77 @@
-<div class="row main-middle">
-  <div class="col my-column features">
+<div class="row small-row-middle ">
+  <div class="col my-column">
     {{range .Params.products}}
-      {{range $value:=.}}
-        {{partial "main_middle_feature" (dict "component" $value )}}
-      {{end}}
+
+    {{if .apm }}
+    {{partial "apm_feature.html" (dict "apm" .apm )}}
     {{end}}
-    {{partial "main_middle_carousel" .}}
-    {{partial "main_middle_customer" .}}  
+
+    {{end}}
+  </div>
+  <div class="col my-column">
+    {{range .Params.products}}
+
+    {{if .infrastructure }}
+    {{partial "infrastructure_feature.html" (dict "infrastructure" .infrastructure )}}
+    {{end}}
+
+    {{end}}
   </div>
 </div>
+<div class="row my-row-bottom">
+  <div class="col my-column">
+    <div class="row small-row-middle">
+      <div class="col my-column">
+        logs
+      </div>
+    </div>
+    <div class="row large-row-middle">
+      <div class="col my-column">
+        customers
+      </div>
+    </div>
+  </div>
+  <div class="col my-column">
+    <div class="row medium-row-middle">
+      <div class="col my-column">
+        carousel
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+<!-- <div class="row main-middle">
+
+  <div class="col my-column feature-left">
+
+    {{range .Params.products}}
+
+    {{if .apm }}
+    {{partial "apm_feature.html" (dict "apm" .apm )}}
+    {{end}}
+
+    {{if .logs_management }}
+    {{partial "logs_management_feature.html" (dict "logs_management" .logs_management )}}
+    {{end}}
+
+    {{end}}
+
+    {{partial "main_middle_customer" .}}
+
+  </div>
+  <div class="col my-column feature-right">
+    {{range .Params.products}}
+
+    {{if .infrastructure }}
+    {{partial "infrastructure_feature.html" (dict "infrastructure" .infrastructure )}}
+    {{end}}
+
+    {{end}}
+
+    {{partial "main_middle_carousel" .}}
+  </div>
+
+</div> -->

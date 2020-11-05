@@ -10,6 +10,9 @@ $landing-page-height: 2322px;
 $landing-main-height: 1989px;
 $main-top-height: 500px;
 $main-middle-height: 1989px - 500px;
+$small-row-middle: 279px;
+$main-middle-bottom-height: $main-middle-height - $small-row-middle;
+$main-width: (557 * 2) + 30;
 
 // added color themes to the Sass theme-color map
 $theme-colors: (
@@ -30,7 +33,7 @@ $theme-colors: (
 
 .landing-container{
   height: $landing-page-height;
-  border: $container-clr;
+  // border: $container-clr;
 }
 .landing-row{
   height: $landing-main-height;
@@ -38,4 +41,15 @@ $theme-colors: (
 .my-column{
   border: $column-clr solid 1px;
 }
-
+.small-row-middle{
+  height: $small-row-middle;
+}
+.medium-row-middle{
+  height: 585px
+}
+.large-row-middle{
+  height: 186px * 4
+}
+.my-row-bottom{
+  height: $main-middle-bottom-height;
+}
