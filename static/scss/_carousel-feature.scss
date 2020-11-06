@@ -2,13 +2,20 @@
   height: 585px;
   padding: 0;
   background-color: #F5F5F5;
+  display: flex;
+  flex-direction: row;
+}
+.carousel-item{
+  margin: 0;
 }
 .carousel-title{
   color: $primary-color;
 }
 .nav-row{
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  height: 95%;
 }
 .carousel-text{
   width:  85%;
@@ -20,6 +27,10 @@
   color: $primary-color;
 }
 .carousel-image{
-  padding: 30px;
-  width: 85%;
+  width: 90%;
+}
+
+.my-next-arrow-area{
+  padding-top: 33.33%;
+  background-color: #F5F5F5;
 }

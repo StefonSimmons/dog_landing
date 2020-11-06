@@ -11579,6 +11579,17 @@ li {
   height: 585px;
   padding: 0;
   background-color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.carousel-item {
+  margin: 0;
 }
 
 .carousel-title {
@@ -11589,9 +11600,14 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 95%;
 }
 
 .carousel-text {
@@ -11608,8 +11624,12 @@ li {
 }
 
 .carousel-image {
-  padding: 30px;
-  width: 85%;
+  width: 90%;
+}
+
+.my-next-arrow-area {
+  padding-top: 33.33%;
+  background-color: #F5F5F5;
 }
 
 .customer-card {
@@ -11705,7 +11725,7 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 196px;
+  padding-left: 14%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
