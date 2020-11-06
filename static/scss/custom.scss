@@ -8,9 +8,9 @@ $teritary-color:rgba(255,99,90,1);
 
 $pricing-bg-color: rgb(245,245,245);
 $landing-page-height: 2322px;
-$landing-main-height: 1989px;
+$landing-main-height: 2025px;
 $main-top-height: 515px;
-$main-middle-height: 1989px - 500px;
+$main-middle-height: 1989px - 515px;
 $small-column-middle: 279px;
 $small-row-middle: 309px;
 $main-middle-bottom-height: $main-middle-height - $small-row-middle;
@@ -31,16 +31,18 @@ $theme-colors: (
 @import "./product-features";
 @import "./carousel-feature";
 @import "./customer-feature";
+@import "./footer";
 
 .landing-container{
   height: $landing-page-height;
-  border: $container-clr;
+  padding: 0;
+  // border: $container-clr;
 }
 .landing-row{
   height: $landing-main-height;
 }
 .my-column{
-  border: $column-clr solid 1px;
+  // border: $column-clr solid 1px;
 }
 .small-row-middle{
   height: $small-row-middle;
