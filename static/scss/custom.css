@@ -11439,6 +11439,7 @@ li {
 .product-feature-card {
   height: 279px;
   padding: 0;
+  border-radius: 0px;
 }
 
 .custom-overlay {
@@ -11475,6 +11476,7 @@ li {
 .carousel-card {
   height: 585px;
   padding: 0;
+  background-color: #F5F5F5;
 }
 
 .carousel-title {
@@ -11617,6 +11619,13 @@ li {
   border: 1px solid #979797;
   border-radius: 5px;
   text-transform: uppercase;
+  -webkit-transition: all .1s ease-in-out .05s;
+  transition: all .1s ease-in-out .05s;
+}
+
+.free-trial-btn:hover {
+  background-color: white;
+  color: #2b2aa7;
 }
 
 .terms-privacy {
