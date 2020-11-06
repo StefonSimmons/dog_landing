@@ -1,16 +1,26 @@
 .main-top{
-  height: $main-top-height
+  height: $main-top-height;
+  border: green solid 1px;
 }
 .main-top-left{
   // padding: 0 30px 0 0;
+  border: green solid 1px;
   height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media(max-width: 1200px){
+    height: 250px
+  }
 }
 .main-top-right{
   padding: 0 30px;
   height: 500px;
+  
+  @media(max-width: 1200px){
+    height: 250px
+  }
 }
 h1{
   font-size: 48px;

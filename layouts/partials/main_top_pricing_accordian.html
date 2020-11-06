@@ -1,0 +1,24 @@
+<div id="accordion" class="d-flex d-xl-none pricing-container-accoridian">
+  <div class="card">
+    <div class="card-header" id="heading{{.component.title}}">
+      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#{{.component.title}}"
+        aria-expanded="false" aria-controls={{.component.title}}>
+        <h6 class="{{.component.title}}-component price-title">{{.component.title}}</h6>
+        <p class="text">Starting at</p>
+        <h1 class="price">{{.component.price}}</h1>
+        <p class="small">Per host, per month*</p>
+      </button>
+    </div>
+
+    <div id="{{.component.title}}" class="collapse" aria-labeledby="heading{{.component.title}}"
+      data-parent="#accordion">
+      <div class="card-body">
+        <p class="description">{{.component.description}}</p>
+        {{range .component.bullets}}
+        <li>- {{.}}</li>
+        {{end}}
+        <span class="{{.component.title}}-component see-details">See Details</span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -11329,9 +11329,11 @@ a.text-logs:hover, a.text-logs:focus {
 
 .main-top {
   height: 515px;
+  border: green solid 1px;
 }
 
 .main-top-left {
+  border: green solid 1px;
   height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11345,9 +11347,21 @@ a.text-logs:hover, a.text-logs:focus {
           justify-content: space-between;
 }
 
+@media (max-width: 1200px) {
+  .main-top-left {
+    height: 250px;
+  }
+}
+
 .main-top-right {
   padding: 0 30px;
   height: 500px;
+}
+
+@media (max-width: 1200px) {
+  .main-top-right {
+    height: 250px;
+  }
 }
 
 h1 {
@@ -11391,6 +11405,10 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.pricing-container-accoridian {
+  border: green solid 1px;
 }
 
 .price-title {
