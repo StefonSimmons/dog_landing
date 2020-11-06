@@ -7,11 +7,11 @@
     <button type="button" class="btn btn-outline-primary free-btn">Try Free</button>
   </div>
   <div class="col-xl-8 my-column main-top-right">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center price-container-wrapper">
       {{range .Params.Products}} <!--mapping the pricing_component array of arrays-->
-        {{range $value:=.}} <!--mapping the objects of the pricing_component -->
+        {{range $component, $value:=.}} <!--mapping the objects of the pricing_component -->
           {{partial "main_top_pricing" (dict "component" $value)}}
-          {{partial "main_top_pricing_accordian" (dict "component" $value)}}
+          {{partial "main_top_pricing_accordian" (dict "component" $value "product" $component)}}
         {{end}}
       {{end}}
     </div>

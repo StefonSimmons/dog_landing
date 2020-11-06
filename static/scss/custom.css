@@ -11329,11 +11329,15 @@ a.text-logs:hover, a.text-logs:focus {
 
 .main-top {
   height: 515px;
-  border: green solid 1px;
+}
+
+@media (max-width: 1200px) {
+  .main-top {
+    height: auto;
+  }
 }
 
 .main-top-left {
-  border: green solid 1px;
   height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11360,7 +11364,7 @@ a.text-logs:hover, a.text-logs:focus {
 
 @media (max-width: 1200px) {
   .main-top-right {
-    height: 250px;
+    height: auto;
   }
 }
 
@@ -11390,6 +11394,11 @@ h3 {
   border: 0px solid #724eef;
 }
 
+.price-container-wrapper {
+  border: #C7C7C7 solid 1px;
+  padding: 0px;
+}
+
 .pricing-container {
   height: 500px;
   padding: 24px 15px;
@@ -11408,7 +11417,25 @@ h3 {
 }
 
 .pricing-container-accoridian {
-  border: green solid 1px;
+  background-color: whitesmoke;
+  width: 33.33%;
+}
+
+.my-card-header {
+  background-color: whitesmoke;
+}
+
+.my-card-body {
+  height: 233px;
+}
+
+.card-no-border {
+  border: none;
+  background-color: whitesmoke;
+}
+
+.my-hover-btn:hover {
+  color: #979797;
 }
 
 .price-title {

@@ -1,3 +1,8 @@
+.price-container-wrapper{
+  border: #C7C7C7 solid 1px;
+  padding: 0px;
+}
+
 .pricing-container{
   height: 500px;
   padding: 24px 15px;
@@ -6,10 +11,25 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 .pricing-container-accoridian{
-  border: green solid 1px;
+  background-color: $pricing-bg-color;
+  width: 33.33%;
+}
+.my-card-header{
+  background-color: $pricing-bg-color;
+}
+.my-card-body{
+  height: 233px;
+}
+.card-no-border{
+  border: none;
+  background-color: $pricing-bg-color;
+}
+.my-hover-btn{
+  &:hover{
+    color: #979797
+  }
 }
 .price-title{
   font-size: 12px;
