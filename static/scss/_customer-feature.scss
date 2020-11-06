@@ -1,6 +1,9 @@
 .customer-card{
   height: 736px;
   padding-left: 15px;
+  @media(max-width: 992px){
+    height: auto;
+  }
 }
 .customer-block{
   height: 186px;

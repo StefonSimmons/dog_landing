@@ -11624,17 +11624,23 @@ li {
 }
 
 .carousel-image {
-  width: 90%;
+  width: 85%;
 }
 
 .my-next-arrow-area {
-  padding-top: 33.33%;
+  padding-top: 100px;
   background-color: #F5F5F5;
 }
 
 .customer-card {
   height: 736px;
   padding-left: 15px;
+}
+
+@media (max-width: 992px) {
+  .customer-card {
+    height: auto;
+  }
 }
 
 .customer-block {
@@ -11774,23 +11780,60 @@ li {
   padding: 0;
 }
 
+@media (max-width: 992px) {
+  .landing-container {
+    height: auto;
+  }
+}
+
 .landing-row {
   height: 2025px;
+}
+
+@media (max-width: 992px) {
+  .landing-row {
+    height: auto;
+  }
 }
 
 .small-row-middle {
   height: 309px;
 }
 
+@media (max-width: 992px) {
+  .small-row-middle {
+    height: auto;
+  }
+}
+
 .medium-row-middle {
   height: 615px;
+}
+
+@media (max-width: 992px) {
+  .medium-row-middle {
+    height: auto;
+  }
 }
 
 .large-row-middle {
   height: 1165px;
 }
 
+@media (max-width: 992px) {
+  .large-row-middle {
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
+
 .large-row {
   height: 774px;
+}
+
+@media (max-width: 992px) {
+  .large-row {
+    height: auto;
+  }
 }
 /*# sourceMappingURL=custom.css.map */
