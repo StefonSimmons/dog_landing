@@ -11357,6 +11357,12 @@ a.text-logs:hover, a.text-logs:focus {
   }
 }
 
+@media (max-width: 795px) {
+  .main-top-left {
+    height: 300px;
+  }
+}
+
 .main-top-right {
   padding: 0 30px;
   height: 500px;
@@ -11375,8 +11381,20 @@ h1 {
   margin-bottom: 18px;
 }
 
+@media (max-width: 895px) {
+  h1 {
+    font-size: 42px;
+  }
+}
+
 h3 {
   font-size: 28px;
+}
+
+@media (max-width: 895px) {
+  h3 {
+    font-size: 24px;
+  }
 }
 
 .free-btn {
@@ -11743,6 +11761,12 @@ li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-family: Helvetica Neue;
+}
+
+@media (max-width: 992px) {
+  .free-trial-area {
+    padding-left: 7%;
+  }
 }
 
 .free-trial-btn {
