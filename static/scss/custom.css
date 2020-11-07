@@ -11746,7 +11746,8 @@ li {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#443E48), to(#110617));
   background-image: linear-gradient(#443E48, #110617);
   padding: 0;
-  height: 333px;
+  height: auto;
+  padding: 49px;
   color: #b6b6b6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11766,6 +11767,12 @@ li {
   line-height: 19px;
   padding-bottom: 8px;
   border-bottom: 1px solid #979797;
+}
+
+@media (max-width: 768px) {
+  .footer-topic {
+    padding: 25px;
+  }
 }
 
 .footer-list > li {
@@ -11790,6 +11797,19 @@ li {
 @media (max-width: 992px) {
   .free-trial-area {
     padding-left: 7%;
+  }
+}
+
+@media (max-width: 768px) {
+  .free-trial-area {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 25px;
   }
 }
 

@@ -1,7 +1,8 @@
 .footer{
   background-image: linear-gradient(#443E48, #110617);
   padding: 0;
-  height: 333px;
+  height: auto;
+  padding: 49px;
   color: rgba(182,182,182,1);
   display: flex;
   flex-direction: column;
@@ -18,6 +19,12 @@
 .my-col{
   // border: white solid 1px;
 }
+.footer-topic{
+  @media(max-width: 768px){
+    padding: 25px;
+  }
+}
+
 .footer-list > li{
   padding: 0
 }
@@ -30,6 +37,11 @@
 
   @media(max-width: 992px){
     padding-left: 7%;
+  }
+  @media(max-width: 768px){
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 25px;
   }
 }
 .free-trial-btn{
