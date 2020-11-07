@@ -11888,6 +11888,10 @@ li {
   margin: 0px;
 }
 
+.hamburger-menu-item {
+  padding: 0 10px 27px 10px;
+}
+
 .landing-container {
   height: 2322px;
   padding: 0;
