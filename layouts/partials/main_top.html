@@ -6,7 +6,7 @@
     </section>
     <button type="button" class="btn btn-outline-primary free-btn">Try Free</button>
   </div>
-  <div class="col-xl-8 my-column main-top-right">
+  <div class="col-xl-8 row-padding my-column main-top-right">
     <div class="row justify-content-center price-container-wrapper">
       {{range .Params.Products}} <!--mapping the pricing_component array of arrays-->
         {{range $component, $value:=.}} <!--mapping the objects of the pricing_component -->

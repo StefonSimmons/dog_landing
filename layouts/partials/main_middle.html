@@ -1,5 +1,5 @@
 <div class="row small-row-middle align-items-center">
-  <div class="col-lg-6  my-column">
+  <div class="col-lg-6 row-padding my-column">
     {{range .Params.products}}
 
     {{if .apm }}
@@ -8,7 +8,7 @@
 
     {{end}}
   </div>
-  <div class="col-lg-6 my-column">
+  <div class="col-lg-6 row-padding my-column">
     {{range .Params.products}}
 
     {{if .infrastructure }}
@@ -19,7 +19,7 @@
   </div>
 </div>
 <div class="row large-row-middle">
-  <div class="col-lg-6 my-column">
+  <div class="col-lg-6 row-padding my-column">
     <div class="row small-row-middle align-items-center">
       <div class="col my-column">
         {{range .Params.products}}
@@ -37,7 +37,7 @@
       </div>
     </div>
   </div>
-  <div class="col-lg-6 my-column">
+  <div class="col-lg-6 row-padding my-column">
     <div class="row medium-row-middle align-items-center">
       <div class="col my-column">
         {{partial "carousel_feature" .}}

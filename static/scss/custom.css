@@ -11640,6 +11640,7 @@ li {
 @media (max-width: 992px) {
   .customer-card {
     height: auto;
+    padding: 30px 15px;
   }
 }
 
@@ -11655,6 +11656,12 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .customer-block {
+    height: 100px;
+  }
 }
 
 .airbnb-block {
@@ -11835,5 +11842,9 @@ li {
   .large-row {
     height: auto;
   }
+}
+
+.row-padding {
+  padding: 15px;
 }
 /*# sourceMappingURL=custom.css.map */

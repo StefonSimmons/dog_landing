@@ -1,8 +1,10 @@
 .customer-card{
   height: 736px;
   padding-left: 15px;
+
   @media(max-width: 992px){
     height: auto;
+    padding: 30px 15px
   }
 }
 .customer-block{
@@ -11,6 +13,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media(max-width: 1200px){
+    height: 100px;
+  }
 }
 .airbnb-block{
   background-color: #FF5A5F;
