@@ -11455,6 +11455,12 @@ h3 {
   background-color: whitesmoke;
 }
 
+@media (max-width: 795px) {
+  .my-card-header {
+    padding: 15px;
+  }
+}
+
 .my-card-body {
   height: 233px;
 }
