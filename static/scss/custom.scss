@@ -17,7 +17,7 @@ $theme-colors: (
 );
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
-@import "./side-bar";
+@import "./navigation-bars";
 @import "./main";
 @import "./main-top";
 @import "./main-top-pricing";

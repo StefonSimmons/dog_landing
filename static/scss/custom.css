@@ -4811,7 +4811,7 @@ input[type="button"].btn-block {
   border-bottom: 1px solid #dee2e6;
 }
 
-.nav-tabs .nav-item, .nav-tabs .login-item {
+.nav-tabs .nav-item, .nav-tabs .side-bar .login-item, .side-bar .nav-tabs .login-item {
   margin-bottom: -1px;
 }
 
@@ -4833,7 +4833,8 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link,
-.nav-tabs .show.login-item .nav-link {
+.nav-tabs .side-bar .show.login-item .nav-link,
+.side-bar .nav-tabs .show.login-item .nav-link {
   color: #495057;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
@@ -4857,7 +4858,8 @@ input[type="button"].btn-block {
 
 .nav-fill > .nav-link,
 .nav-fill .nav-item,
-.nav-fill .login-item {
+.nav-fill .side-bar .login-item,
+.side-bar .nav-fill .login-item {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -4866,7 +4868,8 @@ input[type="button"].btn-block {
 
 .nav-justified > .nav-link,
 .nav-justified .nav-item,
-.nav-justified .login-item {
+.nav-justified .side-bar .login-item,
+.side-bar .nav-justified .login-item {
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
   -webkit-box-flex: 1;
@@ -11303,37 +11306,33 @@ a.text-logs:hover, a.text-logs:focus {
   margin-right: 15px;
 }
 
-@media (max-width: 768px) {
-  .side-bar {
-    margin: 0;
-    padding: 38px 30px;
-  }
+.side-bar.top-bar {
+  padding-bottom: 0;
 }
 
-@media (max-width: 767px) {
-  .side-bar {
-    margin: 0;
-    padding: 38px 46px 38px 39px;
-  }
-}
-
-.nav {
+.side-bar .nav {
   margin: 56px 0 59px 0;
 }
 
-.nav-item, .login-item {
+.side-bar .nav-item, .side-bar .login-item {
   color: white;
   font-size: 16px;
   font-weight: 700;
   padding: 0 0 27px 0;
 }
 
-.nav-item:hover, .login-item:hover {
+.side-bar .nav-item:hover, .side-bar .login-item:hover {
   color: black;
 }
 
-.login-item {
+.side-bar .login-item {
   font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  .side-bar {
+    margin: 0;
+  }
 }
 
 .main {
@@ -12099,11 +12098,7 @@ li {
   margin: 0;
 }
 
-.top-bar {
-  padding-bottom: 0;
-}
-
-.logo-icon-bar {
+.logo-hamburger-bar {
   margin-bottom: 38px;
 }
 
