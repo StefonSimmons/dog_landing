@@ -11794,6 +11794,9 @@ a.text-logs:hover, a.text-logs:focus {
 
 .carousel-card .carousel-item .carousel-title {
   color: #724eef;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.342857px;
 }
 
 .carousel-card .carousel-item .carousel-nav-row {
