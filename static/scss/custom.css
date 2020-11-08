@@ -11782,6 +11782,11 @@ li {
 
 .carousel-text {
   width: 85%;
+  text-align: left;
+}
+
+.carousel-item-left {
+  display: none;
 }
 
 .read-more {
@@ -11791,6 +11796,19 @@ li {
   width: -moz-max-content;
   width: max-content;
   color: #724eef;
+  cursor: pointer;
+}
+
+.read-more:hover {
+  background-color: #724eef;
+  color: white;
+  border: 0px solid #724eef;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.img-cut {
+  margin-left: 30px;
 }
 
 .carousel-image {
@@ -11887,6 +11905,12 @@ li {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 49px 15px;
+  }
 }
 
 .footer-title {

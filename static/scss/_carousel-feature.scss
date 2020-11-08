@@ -18,13 +18,22 @@
   height: 95%;
 }
 .carousel-text{
-  width:  85%;
+  width: 85%;
+  text-align:left;
+}
+.carousel-item-left{
+  display: none
 }
 .read-more{
   font-size: 18px;
   border-bottom: solid 1px;
   width: max-content;
   color: $primary-color;
+  cursor: pointer;
+  @include hoverStyle($primary-color)
+}
+.img-cut{
+  margin-left: 30px
 }
 .carousel-image{
   width: 85%;
