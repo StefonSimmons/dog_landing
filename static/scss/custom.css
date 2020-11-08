@@ -11557,6 +11557,60 @@ h3 {
   color: #ff635a;
 }
 
+.infrastructure-component.see-details {
+  border-bottom: solid 1px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.infrastructure-component.see-details:hover {
+  background-color: #2b2aa7;
+  color: white;
+  border: 0px solid #2b2aa7;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.apm-component.see-details {
+  border-bottom: solid 1px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.apm-component.see-details:hover {
+  background-color: #14d071;
+  color: white;
+  border: 0px solid #14d071;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.management-component.see-details {
+  border-bottom: solid 1px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.management-component.see-details:hover {
+  background-color: #ff635a;
+  color: white;
+  border: 0px solid #ff635a;
+  border-radius: 3px;
+  padding: 5px;
+}
+
 .text {
   font-size: 16px;
   margin-bottom: 6px;
@@ -11619,13 +11673,6 @@ li {
   padding-bottom: 8px;
 }
 
-.see-details {
-  border-bottom: solid 1px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
 .product-feature-card {
   height: 279px;
   padding: 0;
@@ -11661,6 +11708,7 @@ li {
 .card-text {
   font-size: 28px;
   line-height: 34px;
+  text-align: center;
 }
 
 .carousel-card {
