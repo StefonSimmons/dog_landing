@@ -51,8 +51,8 @@
 .my-card-header{
   background-color: $pricing-bg-color;
 
-  @media(max-width: 795px){
-    padding: 15px
+  @media(max-width: 850px){
+    padding: 15px 0;
   }
 }
 .my-card-body{

@@ -1,22 +1,15 @@
-$container-clr: rgb(45, 58, 247) solid 1px;
-$column-clr: rgb(247, 59, 45);
-
 $primary-color: rgba(114,78,239,1);
 $primary-color-dk: rgba(43,42,167,1);
 $secondary-color: rgba(20,208,113,1);
 $teritary-color:rgba(255,99,90,1);
 
 $pricing-bg-color: rgb(245,245,245);
-$landing-page-height: 2322px;
-$landing-main-height: 2025px;
-$main-top-height: 515px;
-$main-middle-height: 1989px - 515px;
-$small-column-middle: 279px;
-$small-row-middle: 309px;
-$main-middle-bottom-height: $main-middle-height - $small-row-middle;
-$main-width: (557 * 2) + 30;
 
-// added color themes to the Sass theme-color map
+$main-top-height: 515px;
+$small-row-middle-height: 309px;
+$large-row-middle-height: 1165px;
+
+// adding custom color themes to the Sass theme-color map
 $theme-colors: (
   "infrastructure": $primary-color-dk,
   "apm":$secondary-color,
@@ -34,43 +27,28 @@ $theme-colors: (
 @import "./footer";
 @import "./hamburger_menu";
 
-.landing-container{
-  height: $landing-page-height;
-  padding: 0;
-  @media(max-width: 992px){
-    height: auto;
-  }
-}
-.landing-row{
-  height: $landing-main-height;
-  @media(max-width: 1200px){
-    height: auto;
-  }
-}
-.my-column{
-  // border: $column-clr solid 1px;
-}
+
 .small-row-middle{
-  height: $small-row-middle;
+  height: $small-row-middle-height;
   @media(max-width: 992px){
     height: auto;
   }
 }
-.medium-row-middle{
-  height: 585px + 30px;
+.medium-carousel-feature-row{
+  height: 615px;
   @media(max-width: 992px){
     height: auto;
   }
 }
 .large-row-middle{
-  height: $main-middle-bottom-height;
+  height: $large-row-middle-height;
   @media(max-width: 992px){
     height: auto;
     margin-bottom: 30px;
   }
 }
-.large-row{
-  height: (186px * 4) + 30px;
+.large-customer-feature-row{
+  height: 774px;
   @media(max-width: 992px){
     height: auto;
   }

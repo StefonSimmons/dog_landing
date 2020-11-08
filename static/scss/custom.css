@@ -11356,6 +11356,7 @@ a.text-logs:hover, a.text-logs:focus {
 
 .main-top {
   height: 515px;
+  margin-bottom: 15px;
 }
 
 @media (max-width: 1200px) {
@@ -11502,9 +11503,9 @@ h3 {
   background-color: whitesmoke;
 }
 
-@media (max-width: 795px) {
+@media (max-width: 850px) {
   .my-card-header {
-    padding: 15px;
+    padding: 15px 0;
   }
 }
 
@@ -12140,27 +12141,6 @@ li {
   padding: 0 10px 27px 10px;
 }
 
-.landing-container {
-  height: 2322px;
-  padding: 0;
-}
-
-@media (max-width: 992px) {
-  .landing-container {
-    height: auto;
-  }
-}
-
-.landing-row {
-  height: 2025px;
-}
-
-@media (max-width: 1200px) {
-  .landing-row {
-    height: auto;
-  }
-}
-
 .small-row-middle {
   height: 309px;
 }
@@ -12171,12 +12151,12 @@ li {
   }
 }
 
-.medium-row-middle {
+.medium-carousel-feature-row {
   height: 615px;
 }
 
 @media (max-width: 992px) {
-  .medium-row-middle {
+  .medium-carousel-feature-row {
     height: auto;
   }
 }
@@ -12192,12 +12172,12 @@ li {
   }
 }
 
-.large-row {
+.large-customer-feature-row {
   height: 774px;
 }
 
 @media (max-width: 992px) {
-  .large-row {
+  .large-customer-feature-row {
     height: auto;
   }
 }
