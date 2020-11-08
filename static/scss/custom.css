@@ -11803,6 +11803,8 @@ li {
   width: max-content;
   color: #724eef;
   cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
 .read-more:hover {

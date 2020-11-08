@@ -30,6 +30,8 @@
   width: max-content;
   color: $primary-color;
   cursor: pointer;
+  transition: all .2s ease;
+
   @include hoverStyle($primary-color)
 }
 .img-cut{
