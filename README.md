@@ -1,4 +1,4 @@
-<img src="https://media.giphy.com/media/i2WmDMmfFHt2365lWi/giphy.gif" style="height: 400px" alt='dog jumps'/>
+<img src="https://media.giphy.com/media/i2WmDMmfFHt2365lWi/giphy.gif" style="height: 400px" alt='dog-jumps'/>
 
 ## Tech
 
