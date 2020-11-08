@@ -1,14 +1,3 @@
-@mixin productFeatureCard(){
-  height: 279px;
-  padding: 0;
-  border-radius: 0px;
-  cursor: pointer; 
-  
-  &:hover{
-    transform: scale(1.05)
-  }
-}
-
 .product-feature-card{
   @include productFeatureCard();
 

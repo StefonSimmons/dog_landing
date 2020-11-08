@@ -1,62 +1,14 @@
-$primary-color: rgba(114,78,239,1);
-$primary-color-dk: rgba(43,42,167,1);
-$secondary-color: rgba(20,208,113,1);
-$teritary-color:rgba(255,99,90,1);
+@import "./sass-variables"; //must go before bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap"; // bootstrap styles
 
-$pricing-bg-color: rgb(245,245,245);
-$price-hover-color: #979797;
-
-$footer-color: #B6B6B6;
-$footer-bg-gradient: linear-gradient(#443E48, #110617);
-
-$main-top-height: 515px;
-$small-row-middle-height: 309px;
-$large-row-middle-height: 1165px;
-
-// adding custom color themes to the Sass theme-color map
-$theme-colors: (
-  "infrastructure": $primary-color-dk,
-  "apm":$secondary-color,
-  "logs": $teritary-color
-);
-
-@import "../../node_modules/bootstrap/scss/bootstrap";
-@import "./navigation-bars";
-@import "./main";
-@import "./main-top";
-@import "./main-top-pricing";
-@import "./product-features";
-@import "./carousel-feature";
-@import "./customer-feature";
+@import "./mixins";
+@import "./site_navigation/navigation-bars";
+@import "./site_navigation/hamburger_menu";
+@import "./main-view/main";
+@import "./main-view/main-top";
+@import "./main-view/main-top-pricing";
+@import "./feature-cards/product-features";
+@import "./feature-cards/carousel-feature";
+@import "./feature-cards/customer-feature";
 @import "./footer";
-@import "./hamburger_menu";
-
-
-.small-row-middle{
-  height: $small-row-middle-height;
-  @media(max-width: 992px){
-    height: auto;
-  }
-}
-.medium-carousel-feature-row{
-  height: 615px;
-  @media(max-width: 992px){
-    height: auto;
-  }
-}
-.large-row-middle{
-  height: $large-row-middle-height;
-  @media(max-width: 992px){
-    height: auto;
-    margin-bottom: 30px;
-  }
-}
-.large-customer-feature-row{
-  height: 774px;
-  @media(max-width: 992px){
-    height: auto;
-  }
-}
-.row-padding{
-  padding: 15px;
-}
+@import "./row-heights";

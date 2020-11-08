@@ -10,9 +10,9 @@
     <div class="row justify-content-center price-container-wrapper">
       {{range .Params.Products}} <!--mapping the pricing_component array of arrays-->
         {{range $component, $value:=.}} <!--mapping the objects of the pricing_component -->
-          {{partial "main_top_pricing" (dict "component" $value)}}
-          {{partial "main_top_pricing_accordian" (dict "component" $value "product" $component)}}
-          {{partial "main_top_pricing_smallview" (dict "component" $value "product" $component)}}
+          {{partial "price_views/main_top_pricing" (dict "component" $value)}}
+          {{partial "price_views/main_top_pricing_accordian" (dict "component" $value "product" $component)}}
+          {{partial "price_views/main_top_pricing_smallview" (dict "component" $value "product" $component)}}
           {{end}}
       {{end}}
     </div>
