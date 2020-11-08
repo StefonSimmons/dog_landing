@@ -11734,11 +11734,20 @@ a.text-logs:hover, a.text-logs:focus {
           transform: scale(1.05);
 }
 
-.custom-overlay {
+.product-feature-card .custom-overlay {
+  height: 279px;
+  padding: 0;
+  border-radius: 0px;
+  cursor: pointer;
   mix-blend-mode: multiply;
 }
 
-.card-content-centered {
+.product-feature-card .custom-overlay:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.product-feature-card .card-content-centered {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11754,13 +11763,13 @@ a.text-logs:hover, a.text-logs:focus {
           justify-content: center;
 }
 
-.card-title {
+.product-feature-card .card-content-centered .card-title {
   font-size: 12px;
   letter-spacing: 0.342857px;
   text-transform: uppercase;
 }
 
-.card-text {
+.product-feature-card .card-content-centered .card-text {
   font-size: 28px;
   line-height: 34px;
   text-align: center;

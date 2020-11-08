@@ -1,30 +1,39 @@
-.product-feature-card{
+@mixin productFeatureCard(){
   height: 279px;
   padding: 0;
   border-radius: 0px;
-  cursor: pointer;
+  cursor: pointer; 
   
   &:hover{
     transform: scale(1.05)
   }
 }
-.custom-overlay{
-  mix-blend-mode: multiply;
+
+.product-feature-card{
+  @include productFeatureCard();
+
+  & .custom-overlay{
+    @include productFeatureCard();
+    mix-blend-mode: multiply;
+  }
+  & .card-content-centered{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & .card-title{
+      font-size: 12px;
+      letter-spacing: 0.342857px;
+      text-transform: uppercase;
+    }
+    & .card-text{
+      font-size: 28px;
+      line-height: 34px;
+      text-align: center;
+    }
+  }
 }
 
-.card-content-centered{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.card-title{
-  font-size: 12px;
-  letter-spacing: 0.342857px;
-  text-transform: uppercase;
-}
-.card-text{
-  font-size: 28px;
-  line-height: 34px;
-  text-align: center;
-}
+
+
