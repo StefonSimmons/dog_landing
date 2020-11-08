@@ -3,16 +3,16 @@
     {{range .Params.products}}
 
     {{if .apm }}
-    {{partial "apm_feature.html" (dict "apm" .apm )}}
+    {{partial "product_feature.html" (dict "component" .apm )}}
     {{end}}
 
-    {{end}}
+    {{end}} 
   </div>
   <div class="col-lg-6 row-padding">
     {{range .Params.products}}
 
     {{if .infrastructure }}
-    {{partial "infrastructure_feature.html" (dict "infrastructure" .infrastructure )}}
+    {{partial "product_feature.html" (dict "component" .infrastructure )}}
     {{end}}
 
     {{end}}
@@ -25,7 +25,7 @@
         {{range .Params.products}}
 
         {{if .logs_management }}
-        {{partial "logs_management_feature.html" (dict "logs_management" .logs_management )}}
+        {{partial "product_feature.html" (dict "component" .logs_management )}}
         {{end}}
 
         {{end}}
