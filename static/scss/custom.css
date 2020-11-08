@@ -12004,7 +12004,7 @@ a.text-logs:hover, a.text-logs:focus {
   padding: 0;
   height: auto;
   padding: 49px;
-  color: #b6b6b6;
+  color: #B6B6B6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12023,25 +12023,7 @@ a.text-logs:hover, a.text-logs:focus {
   }
 }
 
-.footer-title {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 19px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #979797;
-}
-
-@media (max-width: 768px) {
-  .footer-topic {
-    padding: 25px;
-  }
-}
-
-.footer-list > li {
-  padding: 0;
-}
-
-.free-trial-area {
+.footer .free-trial-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12057,13 +12039,13 @@ a.text-logs:hover, a.text-logs:focus {
 }
 
 @media (max-width: 992px) {
-  .free-trial-area {
+  .footer .free-trial-area {
     padding-left: 7%;
   }
 }
 
 @media (max-width: 768px) {
-  .free-trial-area {
+  .footer .free-trial-area {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -12075,7 +12057,7 @@ a.text-logs:hover, a.text-logs:focus {
   }
 }
 
-.free-trial-btn {
+.footer .free-trial-area .free-trial-btn {
   width: 166px;
   height: 51px;
   background-color: rgba(0, 0, 0, 0);
@@ -12088,12 +12070,35 @@ a.text-logs:hover, a.text-logs:focus {
   transition: all .2s ease;
 }
 
-.free-trial-btn:hover {
+.footer .free-trial-area .free-trial-btn:hover {
   background-color: white;
   color: #2b2aa7;
 }
 
-.terms-privacy {
+.footer .free-trial-area h6 {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .footer .footer-topic-column {
+    padding: 25px;
+  }
+}
+
+.footer .footer-topic-column .footer-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #979797;
+}
+
+.footer .footer-topic-column .footer-list > li {
+  padding: 0;
+  list-style: none;
+}
+
+.footer .terms-privacy {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12106,10 +12111,6 @@ a.text-logs:hover, a.text-logs:focus {
   font-size: 16px;
   color: white;
   height: 100px;
-}
-
-.terms-privacy h6 {
-  margin: 0;
 }
 
 .logo-hamburger-bar {
