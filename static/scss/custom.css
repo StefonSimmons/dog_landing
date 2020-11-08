@@ -11477,7 +11477,7 @@ a.text-logs:hover, a.text-logs:focus {
   display: none;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .pricing-container-accordian {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11493,12 +11493,17 @@ a.text-logs:hover, a.text-logs:focus {
   }
 }
 
-.pricing-container-smallview {
+.pricing-container-accordian .card-no-border {
+  border: none;
+  background-color: whitesmoke;
+}
+
+.pricing-container-accordion-smallview {
   display: none;
 }
 
 @media (max-width: 650px) {
-  .pricing-container-smallview {
+  .pricing-container-accordion-smallview {
     display: block;
   }
 }
@@ -11523,12 +11528,13 @@ a.text-logs:hover, a.text-logs:focus {
   }
 }
 
-.card-no-border {
-  border: none;
-  background-color: whitesmoke;
+.my-card-body li {
+  list-style: none;
+  font-size: 16px;
+  padding-bottom: 8px;
 }
 
-.my-hover-btn {
+.price-hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11541,15 +11547,15 @@ a.text-logs:hover, a.text-logs:focus {
           align-items: center;
 }
 
-.my-hover-btn:hover {
+.price-hover:hover {
   color: #979797;
 }
 
-.my-hover-btn:hover .price-arrow-down {
+.price-hover:hover .price-arrow {
   border-color: #979797;
 }
 
-.my-hover-btn:not(.collapsed) .price-arrow-down {
+.price-hover:not(.collapsed) .price-arrow {
   -webkit-transform: rotate(225deg);
           transform: rotate(225deg);
 }
@@ -11577,14 +11583,6 @@ a.text-logs:hover, a.text-logs:focus {
   color: #2b2aa7;
 }
 
-.apm-component {
-  color: #14d071;
-}
-
-.management-component {
-  color: #ff635a;
-}
-
 .infrastructure-component.see-details {
   border-bottom: solid 1px;
   width: -webkit-max-content;
@@ -11603,6 +11601,10 @@ a.text-logs:hover, a.text-logs:focus {
   padding: 5px;
 }
 
+.apm-component {
+  color: #14d071;
+}
+
 .apm-component.see-details {
   border-bottom: solid 1px;
   width: -webkit-max-content;
@@ -11619,6 +11621,10 @@ a.text-logs:hover, a.text-logs:focus {
   border: 0px solid #14d071;
   border-radius: 3px;
   padding: 5px;
+}
+
+.management-component {
+  color: #ff635a;
 }
 
 .management-component.see-details {
@@ -11695,13 +11701,7 @@ a.text-logs:hover, a.text-logs:focus {
   }
 }
 
-li {
-  list-style: none;
-  font-size: 16px;
-  padding-bottom: 8px;
-}
-
-.price-arrow-down {
+.price-arrow {
   border-right: solid black;
   border-bottom: solid black;
   width: 20px;

@@ -1,12 +1,12 @@
 <div class="row main-top">
-  <div class="col-xl-4 my-column main-top-left">
+  <div class="col-xl-4 main-top-left">
     <section class="d-flex flex-column align-items-center">
       <h1>{{.Params.header}}</h1>
       <h3>{{.Params.subheader}}</h3>
     </section>
     <button type="button" class="btn btn-outline-primary free-btn">Try Free</button>
   </div>
-  <div class="col-xl-8 row-padding my-column main-top-right">
+  <div class="col-xl-8 row-padding main-top-right">
     <div class="row justify-content-center price-container-wrapper">
       {{range .Params.Products}} <!--mapping the pricing_component array of arrays-->
         {{range $component, $value:=.}} <!--mapping the objects of the pricing_component -->

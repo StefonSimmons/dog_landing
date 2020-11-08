@@ -13,6 +13,7 @@
     padding: 5px;
   }
 }
+// Mixins above ⏫
 
 .price-container-wrapper{
   border: #C7C7C7 solid 1px;
@@ -22,6 +23,8 @@
     border: none;
   }
 }
+
+// applied >=1200px width
 .pricing-container{
   height: 500px;
   padding: 24px 15px;
@@ -31,9 +34,10 @@
   flex-direction: column;
   justify-content: space-between;
 }
+// applied 650px < 1200px width
 .pricing-container-accordian{
   display: none;
-  @media(max-width: 1200px){
+  @media(max-width: 1199px){
     display: flex;
     background-color: $pricing-bg-color;
     width: 33.33%;
@@ -41,13 +45,21 @@
   @media(max-width: 650px){
     display: none;
   }
+
+  & .card-no-border{
+    border: none;
+    background-color: $pricing-bg-color;
+  }
 }
-.pricing-container-smallview{
+
+// applied <=650px width
+.pricing-container-accordion-smallview{
   display: none;
   @media(max-width: 650px){
     display: block
   }
 }
+
 .my-card-header{
   background-color: $pricing-bg-color;
 
@@ -60,25 +72,30 @@
   @media(max-width: 992px){
     height: 300px
   }
+
+  & li{
+    list-style: none;
+    font-size: 16px;
+    padding-bottom: 8px;
+  }
 }
-.card-no-border{
-  border: none;
-  background-color: $pricing-bg-color;
-}
-.my-hover-btn{
+
+.price-hover{
   display: flex;
   flex-direction: column;
   align-items: center;
+
   &:hover{
-    .price-arrow-down{
-      border-color: #979797;
+    .price-arrow{
+      border-color: $price-hover-color;
     }
-    color: #979797
+    color: $price-hover-color
   }
-}
-.my-hover-btn:not(.collapsed){
-  .price-arrow-down{
-    transform: rotate(225deg);
+
+  &:not(.collapsed){
+    .price-arrow{
+      transform: rotate(225deg);
+    }
   }
 }
 
@@ -94,28 +111,32 @@
     margin-bottom: 8px;
   }
 }
+
 .infrastructure-component{
   color: $primary-color-dk;
+
+  &.see-details{
+    @include seeDetail();
+    @include hoverStyle($primary-color-dk)
+  }
 }
+
 .apm-component{
   color: $secondary-color;
+
+  &.see-details{
+    @include seeDetail();
+    @include hoverStyle($secondary-color)
+  }
 }
+
 .management-component{
   color: $teritary-color;
-}
-.infrastructure-component.see-details{
-  @include seeDetail();
-  @include hoverStyle($primary-color-dk)
 
-}
-.apm-component.see-details{
-  @include seeDetail();
-  @include hoverStyle($secondary-color)
-
-}
-.management-component.see-details{
-  @include seeDetail();
-  @include hoverStyle($teritary-color)
+  &.see-details{
+    @include seeDetail();
+    @include hoverStyle($teritary-color)
+  }
 }
 
 .text{
@@ -152,14 +173,8 @@
     margin-bottom: 8px;
   }
 }
-li{
-  list-style: none;
-  font-size: 16px;
-  padding-bottom: 8px;
-}
 
-
-.price-arrow-down{
+.price-arrow{
   border-right: solid black;
   border-bottom: solid black;
   width: 20px;

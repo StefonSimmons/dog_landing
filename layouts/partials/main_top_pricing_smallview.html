@@ -1,12 +1,12 @@
-<div id="accordion"class="col-md align-items-center pricing-container-smallview">
+<div id="accordion"class="col-md align-items-center pricing-container-accordion-smallview">
   <div class="my-card-header w-100 d-flex justify-content-center" id="heading{{.product}}">
-    <button class="btn collapsed my-hover-btn" data-toggle="collapse" data-target="#{{.product}}"
+    <button class="btn collapsed price-hover" data-toggle="collapse" data-target="#{{.product}}"
       aria-expanded="false" aria-controls={{.product}}>
       <h6 class="{{.component.title}}-component price-title">{{.component.title}}</h6>
       <p class="text">Starting at</p>
       <h1 class="price">{{.component.price}}</h1>
       <p class="small">Per host, per month*</p>
-      <div class='price-arrow-down'></div>
+      <div class='price-arrow'></div>
     </button>
   </div>
 
