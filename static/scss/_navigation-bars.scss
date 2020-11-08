@@ -5,6 +5,14 @@
 
   &.top-bar{
     padding-bottom: 0;
+
+    & .nav{
+      margin: 0px;
+    }
+
+    & .nav-item{
+      padding: 0 10px 27px 10px;
+    }
   }
 
   & .nav{
