@@ -43,7 +43,7 @@ $theme-colors: (
 }
 .landing-row{
   height: $landing-main-height;
-  @media(max-width: 992px){
+  @media(max-width: 1200px){
     height: auto;
   }
 }
