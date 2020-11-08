@@ -11350,7 +11350,7 @@ a.text-logs:hover, a.text-logs:focus {
 @media (max-width: 576px) {
   .main {
     margin-left: 15px;
-    margin-right: 15px;
+    margin-right: 0px;
   }
 }
 
@@ -11522,8 +11522,25 @@ h3 {
   background-color: whitesmoke;
 }
 
+.my-hover-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .my-hover-btn:hover {
   color: #979797;
+}
+
+.my-hover-btn:hover .price-arrow-down {
+  border-color: #979797;
 }
 
 .price-title {
@@ -11671,6 +11688,19 @@ li {
   list-style: none;
   font-size: 16px;
   padding-bottom: 8px;
+}
+
+.price-arrow-down {
+  border-right: solid black;
+  border-bottom: solid black;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 6px;
+  text-align: center;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all .25s;
+  transition: all .25s;
 }
 
 .product-feature-card {

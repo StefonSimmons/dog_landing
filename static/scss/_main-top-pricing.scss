@@ -65,7 +65,13 @@
   background-color: $pricing-bg-color;
 }
 .my-hover-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   &:hover{
+    .price-arrow-down{
+      border-color: #979797;
+    }
     color: #979797
   }
 }
@@ -143,4 +149,16 @@ li{
   list-style: none;
   font-size: 16px;
   padding-bottom: 8px;
+}
+
+
+.price-arrow-down{
+  border-right: solid black;
+  border-bottom: solid black;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 6px;
+  text-align: center;
+  transform: rotate(45deg); 
+  transition: all .25s;
 }
