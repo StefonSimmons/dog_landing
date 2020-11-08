@@ -1,11 +1,3 @@
-.customer-grid{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  
-  @media(max-width: 1200px){
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 .customer-card{
   height: 736px;
   padding-left: 15px;
@@ -14,90 +6,97 @@
     height: auto;
     padding: 30px 15px
   }
-}
-.customer-block{
-  height: 186px;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  
-  &:hover{
-    transform: scale(1.05)
-  }
 
-  &.show-review{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-    padding: 24px;
-  };
-  & .customer-review{
-    font-size: 16px;
-    line-height: 22px;
-    margin-top: 15px;
-  };
-  & .customer-reviewer{
-    font-size: 14px;
-    font-weight: 900;
-    margin: 0;
-  };
-  & .customer-reviewer-title{
-    font-size: 14px;
-    font-weight: 300;
-  };
+  & .customer-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    @media(max-width: 1200px){
+      grid-template-columns: repeat(2, 1fr);
+    }
 
-  & .see-more-stories{
-    font-size: 18px;
-    color: $primary-color
+    & .customer-block{
+      height: 186px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      
+      &:hover{
+        transform: scale(1.05)
+      }
+      // styles for active customer block (i.e. Adroll) 
+      &.show-review{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 24px;
+      };
+      & .customer-review{
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 15px;
+      };
+      & .customer-reviewer{
+        font-size: 14px;
+        font-weight: 900;
+        margin: 0;
+      };
+      & .customer-reviewer-title{
+        font-size: 14px;
+        font-weight: 300;
+      }
+      & .see-more-stories{
+        font-size: 18px;
+        color: $primary-color
+      }
+      @media(max-width: 1200px){
+        height: 100px;
+      }
+    }
+    & .airbnb-block{
+      background-color: #FF5A5F;
+    }
+    & .peloton-block{
+      background-color: #000;
+    } 
+    // styles for active customer block (i.e Adroll)
+    & .adroll-block{
+      height: auto;
+      background-color: #F5F5F5;
+      grid-column: 2/span 2;
+      grid-row: 1/span 2;
+    
+      @media(max-width: 1200px){
+        height: 372px;
+        grid-column: 1/span 2;
+      }
+      @media(max-width: 992px){
+        height: 272px;
+      }
+      @media(max-width: 576px){
+        height: 372px;
+      }
+    }
+    & .evernote-block{
+      background-color: #292929;
+    }
+    & .samsung-block{
+      background-color: #1428A0;
+    }
+    & .nginx-block{
+      background-color: #00AA4E;
+    }
+    & .pagerduty-block{
+      background-color: #5DBD5F;
+    }
+    & .wholefoods-block{
+      background-color: #000
+    }
+    & .att-block{
+      background-color: #00A8E0;
+    }
   }
-
-  @media(max-width: 1200px){
-    height: 100px;
-  }
-}
-
-
-.airbnb-block{
-  background-color: #FF5A5F;
-}
-.peloton-block{
-  background-color: #000;
-} 
-.adroll-block{
-  height: auto;
-  background-color: #F5F5F5;
-  grid-column: 2/span 2;
-  grid-row: 1/span 2;
-
-  @media(max-width: 1200px){
-    height: 372px;
-    grid-column: 1/span 2;
-  }
-  @media(max-width: 992px){
-    height: 272px;
-  }
-  @media(max-width: 576px){
-    height: 372px;
-  }
-}
-.evernote-block{
-  background-color: #292929;
-}
-.samsung-block{
-  background-color: #1428A0;
-}
-.nginx-block{
-  background-color: #00AA4E;
-}
-.pagerduty-block{
-  background-color: #5DBD5F;
-}
-.wholefoods-block{
-  background-color: #000
-}
-.att-block{
-  background-color: #00A8E0;
 }

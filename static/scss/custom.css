@@ -11843,20 +11843,6 @@ a.text-logs:hover, a.text-logs:focus {
   background-color: #F5F5F5;
 }
 
-.customer-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-}
-
-@media (max-width: 1200px) {
-  .customer-grid {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 .customer-card {
   height: 736px;
   padding-left: 15px;
@@ -11869,7 +11855,21 @@ a.text-logs:hover, a.text-logs:focus {
   }
 }
 
-.customer-block {
+.customer-card .customer-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1200px) {
+  .customer-card .customer-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.customer-card .customer-grid .customer-block {
   height: 186px;
   padding: 0;
   display: -webkit-box;
@@ -11884,12 +11884,12 @@ a.text-logs:hover, a.text-logs:focus {
   cursor: pointer;
 }
 
-.customer-block:hover {
+.customer-card .customer-grid .customer-block:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-.customer-block.show-review {
+.customer-card .customer-grid .customer-block.show-review {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11906,43 +11906,43 @@ a.text-logs:hover, a.text-logs:focus {
   padding: 24px;
 }
 
-.customer-block .customer-review {
+.customer-card .customer-grid .customer-block .customer-review {
   font-size: 16px;
   line-height: 22px;
   margin-top: 15px;
 }
 
-.customer-block .customer-reviewer {
+.customer-card .customer-grid .customer-block .customer-reviewer {
   font-size: 14px;
   font-weight: 900;
   margin: 0;
 }
 
-.customer-block .customer-reviewer-title {
+.customer-card .customer-grid .customer-block .customer-reviewer-title {
   font-size: 14px;
   font-weight: 300;
 }
 
-.customer-block .see-more-stories {
+.customer-card .customer-grid .customer-block .see-more-stories {
   font-size: 18px;
   color: #724eef;
 }
 
 @media (max-width: 1200px) {
-  .customer-block {
+  .customer-card .customer-grid .customer-block {
     height: 100px;
   }
 }
 
-.airbnb-block {
+.customer-card .customer-grid .airbnb-block {
   background-color: #FF5A5F;
 }
 
-.peloton-block {
+.customer-card .customer-grid .peloton-block {
   background-color: #000;
 }
 
-.adroll-block {
+.customer-card .customer-grid .adroll-block {
   height: auto;
   background-color: #F5F5F5;
   -ms-grid-column: 2;
@@ -11954,7 +11954,7 @@ a.text-logs:hover, a.text-logs:focus {
 }
 
 @media (max-width: 1200px) {
-  .adroll-block {
+  .customer-card .customer-grid .adroll-block {
     height: 372px;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -11963,38 +11963,38 @@ a.text-logs:hover, a.text-logs:focus {
 }
 
 @media (max-width: 992px) {
-  .adroll-block {
+  .customer-card .customer-grid .adroll-block {
     height: 272px;
   }
 }
 
 @media (max-width: 576px) {
-  .adroll-block {
+  .customer-card .customer-grid .adroll-block {
     height: 372px;
   }
 }
 
-.evernote-block {
+.customer-card .customer-grid .evernote-block {
   background-color: #292929;
 }
 
-.samsung-block {
+.customer-card .customer-grid .samsung-block {
   background-color: #1428A0;
 }
 
-.nginx-block {
+.customer-card .customer-grid .nginx-block {
   background-color: #00AA4E;
 }
 
-.pagerduty-block {
+.customer-card .customer-grid .pagerduty-block {
   background-color: #5DBD5F;
 }
 
-.wholefoods-block {
+.customer-card .customer-grid .wholefoods-block {
   background-color: #000;
 }
 
-.att-block {
+.customer-card .customer-grid .att-block {
   background-color: #00A8E0;
 }
 
