@@ -5,7 +5,11 @@
 
   @media(max-width: 768px){
     margin: 0;
-    
+    padding: 38px 30px
+  }
+  @media(max-width: 767px){
+    margin: 0;
+    padding: 38px 46px 38px 39px;
   }
 }
 .nav{

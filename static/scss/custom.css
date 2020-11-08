@@ -11306,6 +11306,14 @@ a.text-logs:hover, a.text-logs:focus {
 @media (max-width: 768px) {
   .side-bar {
     margin: 0;
+    padding: 38px 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .side-bar {
+    margin: 0;
+    padding: 38px 46px 38px 39px;
   }
 }
 
@@ -11335,7 +11343,14 @@ a.text-logs:hover, a.text-logs:focus {
 
 @media (max-width: 768px) {
   .main {
-    margin-left: 45px;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 
@@ -11429,6 +11444,12 @@ h3 {
   padding: 0px;
 }
 
+@media (max-width: 650px) {
+  .price-container-wrapper {
+    border: none;
+  }
+}
+
 .pricing-container {
   height: 500px;
   padding: 24px 15px;
@@ -11446,9 +11467,34 @@ h3 {
           justify-content: space-between;
 }
 
-.pricing-container-accoridian {
-  background-color: whitesmoke;
-  width: 33.33%;
+.pricing-container-accordian {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .pricing-container-accordian {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: whitesmoke;
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 650px) {
+  .pricing-container-accordian {
+    display: none;
+  }
+}
+
+.pricing-container-smallview {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .pricing-container-smallview {
+    display: block;
+  }
 }
 
 .my-card-header {

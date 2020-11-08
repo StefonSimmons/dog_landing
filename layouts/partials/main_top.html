@@ -12,7 +12,8 @@
         {{range $component, $value:=.}} <!--mapping the objects of the pricing_component -->
           {{partial "main_top_pricing" (dict "component" $value)}}
           {{partial "main_top_pricing_accordian" (dict "component" $value "product" $component)}}
-        {{end}}
+          {{partial "main_top_pricing_smallview" (dict "component" $value "product" $component)}}
+          {{end}}
       {{end}}
     </div>
   </div>

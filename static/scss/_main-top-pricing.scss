@@ -1,6 +1,10 @@
 .price-container-wrapper{
   border: #C7C7C7 solid 1px;
   padding: 0px;
+  @media(max-width: 650px){
+    border: none;
+  }
+
 }
 
 .pricing-container{
@@ -12,9 +16,22 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.pricing-container-accoridian{
-  background-color: $pricing-bg-color;
-  width: 33.33%;
+.pricing-container-accordian{
+  display: none;
+  @media(max-width: 1200px){
+    display: flex;
+    background-color: $pricing-bg-color;
+    width: 33.33%;
+  }
+  @media(max-width: 650px){
+    display: none;
+  }
+}
+.pricing-container-smallview{
+  display: none;
+  @media(max-width: 650px){
+    display: block
+  }
 }
 .my-card-header{
   background-color: $pricing-bg-color;
