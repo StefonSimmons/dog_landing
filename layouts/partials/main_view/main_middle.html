@@ -1,0 +1,48 @@
+<div class="row small-row-middle align-items-center">
+  <div class="col-lg-6 row-padding">
+    {{range .Params.products}}
+
+    {{if .apm }}
+    {{partial "feature_cards/product_feature.html" (dict "component" .apm )}}
+    {{end}}
+
+    {{end}} 
+  </div>
+  <div class="col-lg-6 row-padding">
+    {{range .Params.products}}
+
+    {{if .infrastructure }}
+    {{partial "feature_cards/product_feature.html" (dict "component" .infrastructure )}}
+    {{end}}
+
+    {{end}}
+  </div>
+</div>
+<div class="row large-row-middle">
+  <div class="col-lg-6 row-padding">
+    <div class="row small-row-middle align-items-center">
+      <div class="col">
+        {{range .Params.products}}
+
+        {{if .logs_management }}
+        {{partial "feature_cards/product_feature.html" (dict "component" .logs_management )}}
+        {{end}}
+
+        {{end}}
+      </div>
+    </div>
+    <div class="row large-customer-feature-row align-items-center">
+      <div class="col">
+        {{partial "feature_cards/customer_feature" .}}
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 row-padding">
+    <div class="row medium-carousel-feature-row align-items-center">
+      <div class="col">
+        {{partial "feature_cards/carousel_feature" .}}
+      </div>
+    </div>
+
+  </div>
+</div>

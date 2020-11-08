@@ -1,2 +1,14 @@
+@import "./sass-variables"; //must go before bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap"; // bootstrap styles
 
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./mixins";
+@import "./site_navigation/navigation-bars";
+@import "./site_navigation/hamburger_menu";
+@import "./main-view/main";
+@import "./main-view/main-top";
+@import "./main-view/main-top-pricing";
+@import "./feature-cards/product-features";
+@import "./feature-cards/carousel-feature";
+@import "./feature-cards/customer-feature";
+@import "./footer";
+@import "./row-heights";

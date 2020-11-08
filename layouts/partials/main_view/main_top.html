@@ -1,0 +1,20 @@
+<div class="row main-top">
+  <div class="col-xl-4 main-top-left">
+    <section class="d-flex flex-column align-items-center">
+      <h1>{{.Params.header}}</h1>
+      <h3>{{.Params.subheader}}</h3>
+    </section>
+    <button type="button" class="btn btn-outline-primary free-btn">Try Free</button>
+  </div>
+  <div class="col-xl-8 row-padding main-top-right">
+    <div class="row justify-content-center price-container-wrapper">
+      {{range .Params.Products}} <!--mapping the pricing_component array of arrays-->
+        {{range $component, $value:=.}} <!--mapping the objects of the pricing_component -->
+          {{partial "price_views/main_top_pricing" (dict "component" $value)}}
+          {{partial "price_views/main_top_pricing_accordian" (dict "component" $value "product" $component)}}
+          {{partial "price_views/main_top_pricing_smallview" (dict "component" $value "product" $component)}}
+          {{end}}
+      {{end}}
+    </div>
+  </div>
+</div>
