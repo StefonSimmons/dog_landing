@@ -11441,7 +11441,8 @@ h3 {
 
 .price-container-wrapper {
   border: #C7C7C7 solid 1px;
-  padding: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 @media (max-width: 650px) {
