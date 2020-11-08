@@ -11543,6 +11543,11 @@ h3 {
   border-color: #979797;
 }
 
+.my-hover-btn:not(.collapsed) .price-arrow-down {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
 .price-title {
   font-size: 12px;
   letter-spacing: 0.342857px;
@@ -11695,7 +11700,6 @@ li {
   border-bottom: solid black;
   width: 20px;
   height: 20px;
-  margin-bottom: 6px;
   text-align: center;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);

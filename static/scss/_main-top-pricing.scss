@@ -75,6 +75,12 @@
     color: #979797
   }
 }
+.my-hover-btn:not(.collapsed){
+  .price-arrow-down{
+    transform: rotate(225deg);
+  }
+}
+
 .price-title{
   font-size: 12px;
   letter-spacing: 0.342857px;
@@ -157,7 +163,7 @@ li{
   border-bottom: solid black;
   width: 20px;
   height: 20px;
-  margin-bottom: 6px;
+  // margin-bottom: 6px;
   text-align: center;
   transform: rotate(45deg); 
   transition: all .25s;
