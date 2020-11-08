@@ -11779,15 +11779,15 @@ a.text-logs:hover, a.text-logs:focus {
           flex-direction: row;
 }
 
-.carousel-item {
+.carousel-card .carousel-item {
   margin: 0;
 }
 
-.carousel-title {
+.carousel-card .carousel-item .carousel-title {
   color: #724eef;
 }
 
-.nav-row {
+.carousel-card .carousel-item .carousel-nav-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11801,16 +11801,12 @@ a.text-logs:hover, a.text-logs:focus {
   height: 95%;
 }
 
-.carousel-text {
+.carousel-card .carousel-item .carousel-nav-row .carousel-text {
   width: 85%;
   text-align: left;
 }
 
-.carousel-item-left {
-  display: none;
-}
-
-.read-more {
+.carousel-card .carousel-item .carousel-nav-row .read-more {
   font-size: 18px;
   border-bottom: solid 1px;
   width: -webkit-max-content;
@@ -11822,7 +11818,7 @@ a.text-logs:hover, a.text-logs:focus {
   transition: all .2s ease;
 }
 
-.read-more:hover {
+.carousel-card .carousel-item .carousel-nav-row .read-more:hover {
   background-color: #724eef;
   color: white;
   border: 0px solid #724eef;
@@ -11830,17 +11826,21 @@ a.text-logs:hover, a.text-logs:focus {
   padding: 5px;
 }
 
-.img-cut {
-  margin-left: 30px;
+.carousel-card .carousel-item .carousel-nav-row .carousel-image {
+  width: 85%;
 }
 
-.carousel-image {
-  width: 85%;
+.carousel-card .carousel-item .carousel-nav-row .next-img-cut {
+  margin-left: 30px;
 }
 
 .my-next-arrow-area {
   padding-top: 100px;
   background-color: #F5F5F5;
+}
+
+.carousel-item-left {
+  display: none;
 }
 
 .customer-card {
