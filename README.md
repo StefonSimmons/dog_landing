@@ -7,7 +7,7 @@
 
 ## Deployed to AWS S3 and CloudFront
 
-* [Datadog Landing - (http://dnkqmzjqxsw2n.cloudfront.net/)](http://dnkqmzjqxsw2n.cloudfront.net/)
+* [Datadog Landing - (https://dnkqmzjqxsw2n.cloudfront.net/)](http://dnkqmzjqxsw2n.cloudfront.net/)
 
 <br/>
 
