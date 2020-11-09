@@ -16,6 +16,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  & li{
+    list-style: none;
+    font-size: 16px;
+    padding-bottom: 8px;
+  }
 }
 // applied 650px < 1200px width
 .pricing-container-accordian{
